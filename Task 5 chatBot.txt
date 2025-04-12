@@ -1,14 +1,14 @@
 responses = {
-    "hi": "hello what I do for you",
-    "hello": "Hi What I do for you",
-    "name": "I am  setty.",
-    "what's your name": "I am  setty.",
+    "hi": "Hello, what can I do for you?",
+    "hello": "Hi, what can I do for you?",
+    "name": "I am Setty.",
+    "what's your name": "I am Setty.",
     "how are you": "Great, thanks for asking!",
-    "bye": "Goodbye. It was nice talking to you. Have a nice day",
+    "bye": "Goodbye. It was nice talking to you. Have a nice day!",
     "help": "Of course! What do you need?",
     "thank you": "You're welcome.",
     "what can you do": "I can chat with you, answer questions, and even solve math!",
-    "what you can do": "I can chat with you, answer questions, and even solve math",
+    "what you can do": "I can chat with you, answer questions, and even solve math!",
 }
 
 math_triggers = ["calculate", "what is", "solve", "evaluate"]
@@ -52,7 +52,8 @@ def chatbot():
         if response:
             print(f"Bot: {response}")
         else:
-            print("Bot: I am sorry, I didnot quite understand that. Can you ask something else like math problem")
+            print("Bot: I'm sorry, I didn't quite understand that. Can you ask something else or maybe a math problem?")
 
-if _name_ == "_main_":
+# Corrected the main entry point
+if __name__ == "__main__":
     chatbot()
